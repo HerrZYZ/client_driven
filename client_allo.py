@@ -7,13 +7,12 @@ import time
 from operator import itemgetter
 
 difficulty_parameter=2
-action_ratio_list=[0.3, 0.8]
+action_ratio_list=[1, 0.9]
 epochlength = 1
-future_leak_ratio_list = [0.9,0.5,0.1]
-# bigepochlengthlist=[40,100,200,20]
+future_leak_ratio_list = [0]
 bigepochlength = 200
-
 aware_history_length = 1
+
 def checkifclusterempty(x):
     for i in range(16):
        if x.item((0, i)) ==0:
