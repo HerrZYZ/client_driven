@@ -236,10 +236,5 @@ for future_leak_ratio in future_leak_ratio_list:
         f_workload.close()
         f_throuput.close()
 
-        # df_incremental = pd.read_csv(
-        #     'data/incremental_undirected_test_graph_numeric_' + str(bigepochlength + bigloopindex*bigepochlength - epochlength) + '~' + str(
-        #         bigepochlength + bigloopindex*bigepochlength) + 'h.csv')
-        # df_nodeedge = pd.concat([df_incremental, df_previous])
-        # df_nodeedge = df_nodeedge.groupby(['from_address', 'to_address'])['size'].agg('sum').reset_index(name='size')
-        # df_previous = df_nodeedge
+
 
